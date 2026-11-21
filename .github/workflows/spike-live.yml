@@ -27,7 +27,7 @@ jobs:
       - name: upload-progress
         uses: actions/upload-artifact@v4
         with:
-          name: mid-run-progress
+          name: mid-run-progress-2
           path: progress.json
       - name: after-upload
         run: |

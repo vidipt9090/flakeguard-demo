@@ -13,6 +13,7 @@ permissions:
 
 jobs:
   call-flakeguard:
+    if: ${{ false }}
     uses: vidipt9090/FlakeGuard/.github/workflows/scan.yml@develop
     with:
       repo_url: vidipt9090/flakeguard-demo

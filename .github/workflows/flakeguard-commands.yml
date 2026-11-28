@@ -18,6 +18,6 @@ jobs:
   command:
     if: ${{ github.event.issue.pull_request && startsWith(github.event.comment.body, '/flakeguard') }}
     # Same FlakeGuard version as flakeguard.yml; keep the two lines identical.
-    uses: vidipt9090/FlakeGuard/.github/workflows/commands.yml@c/eval3-console
+    uses: vidipt9090/FlakeGuard/.github/workflows/commands.yml@main
     with:
-      flakeguard_ref: c/eval3-console # the same value as the ref after @ in uses:
+      flakeguard_ref: main # the same value as the ref after @ in uses:
